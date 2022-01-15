@@ -1,0 +1,51 @@
+header {
+	background-color: #364552;
+	padding: 2rem 1rem;
+}
+
+header h1 {
+	font-size: 3rem;
+	text-align: center;
+	color: white;
+}
+
+button {
+	width: 14rem;
+	margin: 2rem auto;
+	padding: 1rem;
+	border: none;
+	border-radius: 1.5rem;
+	background-color: snow;
+	cursor: pointer;
+}
+
+#root {
+	width: 72rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.foxContainer {
+	width: 22rem;
+	margin: 1rem 0;
+	padding: 0.25rem 0;
+	border-radius: 0.5rem;
+	background-color: white;
+	transition: box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+.foxContainer:hover {
+	box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.foxContainer h2,
+.foxContainer p {
+	margin: 1.6rem;
+}
+
+img {
+	width: 100%;
+}
