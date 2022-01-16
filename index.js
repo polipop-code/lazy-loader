@@ -4,6 +4,10 @@ const reference = document.getElementById("root");
 const min = 1;
 const max = 123;
 
+let wordArray = ["new", "wild", "fluffy", "happy", "lovely"];
+
+const randomWord = () => Math.floor(Math.random() * wordArray.length);
+
 const random = () => Math.floor(Math.random() * (max - min)) + min;
 
 const createImageNode = () => {
@@ -13,7 +17,7 @@ const createImageNode = () => {
 
 	// H2 - Title
 	const h2 = document.createElement("h2");
-	h2.textContent = "A nuew fox has appear";
+	h2.textContent = `A ${wordArray[randomWord()]} fox has appear`;
 
 	// Image - Content
 	const image = document.createElement("img");
