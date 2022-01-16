@@ -15,6 +15,11 @@ header p {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header small {
+	color: white;
+	text-align: center;
+}
+
 .foxAccountant {
 	display: flex;
 	justify-content: center;
