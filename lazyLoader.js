@@ -1,5 +1,6 @@
-// accountant
-let accountant = 0;
+// loadAccountant
+let loadAccountant = 0;
+let totalAccountant = 0;
 
 // Intersection observer
 const isIntersecting = (entry) => {
@@ -9,8 +10,8 @@ const isIntersecting = (entry) => {
 const loadImage = (entry) => {
 	const node = entry.target;
 
-	console.log("🟣 Imágenes cargadas: " + (accountant + 1));
-	accountant += 1;
+	console.log("🟣 Imágenes cargadas: " + (loadAccountant + 1) + " de " + totalAccountant);
+	loadAccountant += 1;
 
 	const image = node.querySelector("img");
 
@@ -26,6 +27,8 @@ const observer = new IntersectionObserver((allEntries) => {
 // Lazy Loader
 const registerImage = (image) => {
 	observer.observe(image);
+	console.log("⚪ Total de Imágenes: " + (totalAccountant + 1));
+	totalAccountant += 1;
 };
 
 export { registerImage };
