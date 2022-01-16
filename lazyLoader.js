@@ -1,3 +1,5 @@
+let sightedFox = document.querySelector("p.sightedFox");
+
 // accountant.loaded
 let accountant = {
 	total: 0,
@@ -16,11 +18,13 @@ const loadImage = (entry) => {
 
 	console.log("🟣 Imágenes cargadas: " + (accountant.loaded + 1) + " de " + accountant.total);
 	accountant.loaded += 1;
+	sightedFox.innerText = accountant.loaded;
 
 	const image = node.querySelector("img");
 
 	const url = image.dataset.src;
 	image.src = url;
+
 	observer.unobserve(node);
 };
 

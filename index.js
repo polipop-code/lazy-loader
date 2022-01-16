@@ -1,6 +1,8 @@
 import { registerImage, accountant } from "./lazyLoader.js";
 const reference = document.getElementById("root");
 
+let totalFox = document.querySelector("p.totalFox");
+
 const min = 1;
 const max = 123;
 
@@ -37,6 +39,7 @@ const addImage = () => {
 	const newImage = createImageNode();
 	reference.appendChild(newImage);
 	registerImage(newImage);
+	totalFox.innerText = accountant.total;
 };
 
 // Limpiar
@@ -48,6 +51,7 @@ const removeImage = () => {
 	console.clear();
 	accountant.loaded = 0;
 	accountant.total = 0;
+	totalFox.innerText = accountant.total;
 };
 
 document.querySelector("button").addEventListener("click", addImage);

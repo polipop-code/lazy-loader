@@ -15,15 +15,42 @@ header p {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.foxAccountant {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #efefef;
+}
+
+.foxAccountant {
+	position: sticky;
+	top: 0rem;
+}
+
+.foxAccountant p {
+	margin-left: 0.4rem;
+	margin-right: 1rem;
+	padding: 0.5rem;
+	color: white;
+	border-radius: 0.4rem;
+	background-color: #145374;
+}
+
 .button-container {
 	display: flex;
 	justify-content: center;
+	background-color: #efefef;
+}
+
+.button-container {
+	position: sticky;
+	top: 4rem;
 }
 
 button {
 	width: 14rem;
 	height: 3rem;
-	margin: 2rem 2rem;
+	margin: 1rem 2rem;
 	padding: 1rem;
 	border: none;
 	border-radius: 1.5rem;
