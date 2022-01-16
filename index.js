@@ -1,6 +1,9 @@
 import { registerImage } from "./lazyLoader.js";
 const reference = document.getElementById("root");
 
+// Accountant
+let accountant = 0;
+
 const min = 1;
 const max = 123;
 
@@ -19,6 +22,7 @@ const createImageNode = () => {
 	const image = document.createElement("img");
 	// image.src = "https://source.unsplash.com/random/?{coffee,cup}";
 	image.dataset.src = `https://randomfox.ca/images/${random()}.jpg`;
+	console.log("⚪ Total de imagenes: " + (accountant = +1));
 
 	// P - Description
 	const p = document.createElement("p");

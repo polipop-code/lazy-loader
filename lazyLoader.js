@@ -1,3 +1,6 @@
+// accountant
+let accountant = 0;
+
 // Intersection observer
 const isIntersecting = (entry) => {
 	return entry.isIntersecting;
@@ -5,7 +8,10 @@ const isIntersecting = (entry) => {
 
 const loadImage = (entry) => {
 	const node = entry.target;
-	console.log("Hello!");
+
+	console.log("🟣 Imágenes cargadas: " + (accountant + 1));
+	accountant += 1;
+
 	const image = node.querySelector("img");
 
 	const url = image.dataset.src;
