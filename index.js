@@ -1,4 +1,4 @@
-import { registerImage } from "./lazyLoader.js";
+import { registerImage, accountant } from "./lazyLoader.js";
 const reference = document.getElementById("root");
 
 const min = 1;
@@ -29,16 +29,22 @@ const createImageNode = () => {
 };
 
 // Add button
-const action = () => {
+const addImage = () => {
 	const newImage = createImageNode();
 	reference.appendChild(newImage);
 	registerImage(newImage);
 };
 
 // Limpiar
-const action2 = () => {
-	reference.remove("div.foxContainer");
+const removeImage = () => {
+	// reference.remove("div.foxContainer");
+	while (reference.firstChild) {
+		reference.removeChild(reference.firstChild);
+	}
+	console.clear();
+	accountant.loaded = 0;
+	accountant.total = 0;
 };
 
-document.querySelector("button").addEventListener("click", action);
-document.querySelector("button[type='reset']").addEventListener("click", action2);
+document.querySelector("button").addEventListener("click", addImage);
+document.querySelector("button[class='reset']").addEventListener("click", removeImage);

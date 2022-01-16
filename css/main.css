@@ -9,14 +9,37 @@ header h1 {
 	color: white;
 }
 
+header p {
+	text-align: center;
+	color: white;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+}
+
 button {
 	width: 14rem;
-	margin: 2rem auto;
+	height: 3rem;
+	margin: 2rem 2rem;
 	padding: 1rem;
 	border: none;
 	border-radius: 1.5rem;
 	background-color: snow;
 	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+	/* background-color: aqua; */
+	/* transform: scale(1.1); */
+	/* box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3); */
+	background-color: #145374;
+	color: white;
+	font-weight: bold;
 }
 
 #root {
@@ -48,4 +71,6 @@ button {
 
 img {
 	width: 100%;
+	background: lightgray no-repeat;
+	min-height: 4rem;
 }
