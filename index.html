@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Lazy Loading</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lazy Loading</title>
 
-		<link rel="stylesheet" href="./css/globals.css" />
-		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="stylesheet" href="./css/mediaqueries.css" />
+        <link rel="stylesheet" href="./css/globals.css" />
+        <link rel="stylesheet" href="./css/main.css" />
 
-		<script defer type="module" src="./index.js"></script>
-	</head>
+        <script defer type="module" src="./index.js"></script>
+    </head>
 
-	<body>
-		<header>
-			<h1>Lazy Loader</h1>
-			<p>
-				This page shows you different random fox pictures. To view an image, click in the add image
-				button.
-				<br />
-				This project was made with 100% Vanilla HTML, CSS and JavaScript.
-			</p>
-		</header>
+    <body>
+        <header class="header">
+            <h1>Lazy Loader</h1>
+            <p>Enjoy the foxes (*￣3￣)╭</p>
+        </header>
 
-		<div class="foxAccountant">
-			<span>Foxes arround you:</span>
-			<p class="totalFox">0</p>
-			<span>Foxes sighted today:</span>
-			<p class="sightedFox">0</p>
-		</div>
+        <main class="main">
+            <section class="main--section_foxAccountant">
+                <span>Foxes arround you:</span>
+                <p class="totalFox">0</p>
+                <span>Foxes sighted today:</span>
+                <p class="sightedFox">0</p>
+            </section>
+            <section class="main--section_interaction">
+                <button type="button">Add Image</button>
+                <button type="button" class="reset">Clean the Screen</button>
+            </section>
 
-		<div class="button-container">
-			<button>Add Image</button>
-			<button class="reset">Clean the Screen</button>
-		</div>
-		<div id="root"></div>
-		<footer>
-			<section>
-				<a href="https://github.com/polipop-code" target="_blank">My Github</a>
-			</section>
-			<p>Powered by Github Pages | Develope by @polipop-code</p>
-		</footer>
-	</body>
+            <div id="root"></div>
+        </main>
+
+        <footer class="footer">
+            <section class="footer_first_section">
+                <p>
+                    Developed by @polipop-code on
+                    <a href="https://github.com/polipop-code" target="_blank">GitHub</a>
+                </p>
+            </section>
+            <section class="footer_second_section">
+                <a href="https://twitter.com/polipop_art" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111580.png" />
+                </a>
+                <a href="https://www.instagram.com/polipop_art/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111336.png" />
+                </a>
+                <a href="https://www.linkedin.com/in/jesus-politron/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111368.png" />
+                </a>
+                <a href="https://github.com/polipop-code" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111292.png" />
+                </a>
+            </section>
+        </footer>
+    </body>
 </html>

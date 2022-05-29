@@ -1,121 +1,131 @@
-header {
-	background-color: #364552;
-	padding: 2rem 1rem;
+.header {
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 0.2rem 0 rgb(93 96 99 / 10%);
 }
 
-header h1 {
-	font-size: 3rem;
-	text-align: center;
-	color: white;
+.main {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #efefef;
 }
 
-header p {
-	text-align: center;
-	color: white;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.main--section_foxAccountant {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #efefef;
+
+    position: sticky;
+    top: 0rem;
 }
 
-.foxAccountant {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #efefef;
-
-	position: sticky;
-	top: 0rem;
+.main--section_foxAccountant p {
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.4rem;
+    color: snow;
+    background-color: #145374;
 }
 
-.foxAccountant p {
-	margin-left: 0.4rem;
-	margin-right: 1rem;
-	padding: 0.5rem;
-	color: white;
-	border-radius: 0.4rem;
-	background-color: #145374;
+.main--section_interaction {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #efefef;
+
+    position: sticky;
+    top: 6.8rem;
 }
 
-.button-container {
-	display: flex;
-	justify-content: center;
-	background-color: #efefef;
-
-	position: sticky;
-	top: 4rem;
+.main--section_interaction button {
+    padding: 2rem;
+    border: none;
+    border-radius: 2.4rem;
+    background-color: snow;
+    box-shadow: 0 0.1rem 0.1rem rgb(0 0 0 / 30%);
+    transition: all 0.12s ease-in-out;
 }
 
-button {
-	width: 14rem;
-	height: 3rem;
-	margin: 1rem 2rem;
-	padding: 1rem;
-	border: none;
-	border-radius: 1.5rem;
-	background-color: snow;
-	cursor: pointer;
-	transition: all 0.3s ease-in-out;
-	box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
-}
-
-button:hover {
-	background-color: #145374;
-	color: white;
-	font-weight: bold;
+.main--section_interaction button:hover {
+    transform: scale(1.12);
 }
 
 #root {
-	width: 100%;
-	min-height: 30vh;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    margin: 0 auto 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .foxContainer {
-	width: 22rem;
-	margin: 1rem 0;
-	padding: 0.25rem 0;
-	border-radius: 0.5rem;
-	background-color: white;
-	transition: box-shadow 0.3s ease;
-	cursor: pointer;
+    width: 32rem;
+    margin: 2rem;
+    border-radius: 2.4rem;
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+    transition: all 0.12s ease;
 }
 
 .foxContainer:hover {
-	box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.04);
 }
 
 .foxContainer h2,
 .foxContainer p {
-	margin: 1.6rem;
+    margin: 2rem;
 }
 
-img {
-	width: 100%;
-	background: lightgray no-repeat;
-	min-height: 4rem;
+.foxContainer img {
+    width: 100%;
+    background-color: lightgray no-repeat;
+    min-height: 4rem;
 }
 
-footer {
-	background-color: #222;
-	padding: 3rem;
-	color: white;
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #364552;
+    color: #fffffc;
 }
 
-footer section {
-	float: right;
+.footer > section {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-footer p {
-	margin: 0;
+.footer_first_section a {
+    color: snow;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
 }
 
-footer a {
-	transition: color 0.3s ease;
-	color: white;
-	text-decoration: none;
+.footer_first_section a:hover {
+    color: lightblue;
 }
 
-footer a:hover {
-	color: cornflowerblue;
+.footer_second_section img {
+    width: 4rem;
+    margin: 0 2rem;
+    transition: all 0.12s ease-in-out;
+}
+
+.footer_second_section img:hover {
+    transform: scale(1.24);
+}
+
+/* Media Q */
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+    }
+
+    .footer > section {
+        margin: 0 auto;
+    }
 }
