@@ -1,13 +1,11 @@
 # Lazy Loader
-
 A random fox generator with a few details like a fox accountant for more fun.
+
 ```bash
 Will you reach the goal of discover all the 123 different foxes?
 ```
 
-
 ## Implemented Technologies
-
 **Client:** HTML, CSS, JavaScript and Node.js
 
 ## Contributing
